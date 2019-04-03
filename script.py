@@ -15,4 +15,4 @@ def copy_objects_over_threshold(source_bucket_name, destination_bucket_name, thr
         if (source_bucket.Object(key_name).content_length > float(threshold*1000000)):
             copy_to_bucket(source_bucket_name, destination_bucket_name, key_name)
 
-copy_objects_over_threshold(yellowstonejm123, yellowstonejm1234, .002)
+copy_objects_over_threshold(source_bucket_name, destination_bucket_name, threshold)
