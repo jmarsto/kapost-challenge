@@ -4,4 +4,4 @@ COPY script.py /script.py
 
 RUN pip install boto3
 
-CMD ["python", "/script.py"]
+ENTRYPOINT ["python", "script.py", "yellowstone123", "yellowstone1234", ".002"]
